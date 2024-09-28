@@ -21,9 +21,11 @@ Yourdir.com é uma plataforma de gerenciamento e organização de arquivos que p
 Antes de executar o projeto, verifique se você possui os seguintes coisas:
 
 - docker instalado.
+- Se rodar sem docker instale redis.
 
 ## Rodar projeto
 
+- edite no projeto ydr o .env.exemple para .env
 - docker compose build --no-cache; docker compose up
 
 
