@@ -1,0 +1,89 @@
+{
+  "info": {
+    "name": "Minha API Spring Boot",
+    "description": "Coleção de APIs do meu projeto Spring Boot",
+    "_postman_id": "unique-collection-id",
+    "version": "1.0.0",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Criar Diretório",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Novo Diretório\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/directories",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "directories"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Diretórios",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/directories",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "directories"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar Diretório",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8080/api/directories/:id",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "directories", ":id"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Criar Subdiretório",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Novo Subdiretório\"}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/directories/:parentId/subdirectories",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "directories", ":parentId", "subdirectories"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
