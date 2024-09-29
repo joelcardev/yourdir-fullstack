@@ -113,7 +113,6 @@ const DirectoryList: React.FC<DirectoryListProps> = ({
             <ExpandMoreIcon />
           </IconButton>
           {name}
-
           <Box
             sx={{
               ml: "auto",
@@ -150,7 +149,6 @@ const DirectoryList: React.FC<DirectoryListProps> = ({
             >
               Subdirectory
             </Button>
-
             <IconButton
               onClick={(e) => (e.stopPropagation(), onDeleteDirectory(id))}
               sx={{
@@ -162,7 +160,6 @@ const DirectoryList: React.FC<DirectoryListProps> = ({
             </IconButton>
           </Box>
         </Typography>
-
         <Collapse in={isExpanded} timeout="auto" unmountOnExit>
           <List>
             {!files?.length && !subDirectories?.length ? (
